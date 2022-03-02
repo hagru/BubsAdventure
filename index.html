@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Bubbas adventure!</h1>
+            <p>Press space to jump, R to start / restart</p>
+        </div>
+    </header>
+
+
+    <div class="timer" id="timer"><p></p></div>
+    <div class="info" id="text"><p></p></div>
+
+
+    <div class="game">
+        <div id="grass"></div>
+        <div id="player"></div>
+        <div id="obstacle"></div>
+        
+    </div>
+
+    <div class="scoreboard">
+        <div class="current" id="current-label">Current score: 
+            <span id="current-score">0</span>
+        </div>
+        <div class="best" id="best-label">Best score: 
+            <span id="best-score">0</span>
+        </div>
+    </div>
+
+    <div class="tag" id="tag"><p></p></div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

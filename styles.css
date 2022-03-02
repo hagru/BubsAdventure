@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700');
+
+body {
+    background-color:#1e2127;
+}
+
+header {
+    font-family: Asap, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.game {
+    width: 1400px;
+    height: 500px;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+#grass {
+    position: absolute;
+    top: 470px;
+    width: 1400px;
+    height: 97px;
+    background-image: url(images/grass.png);
+}
+
+
+.info {
+    font-family: Asap, sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.timer {
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 85px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.tag {
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.test {
+    color: red;
+}
+
+#player {
+    width: 108px;
+    height: 212px;
+    background-image: url(images/naomi-player400.png); 
+    position: relative;
+    top: 160px;
+    left: 50px;
+}
+
+.hover {
+    animation: hover 1s linear infinite;
+}
+
+.jump {
+    animation: jump 0.65s linear;
+}
+
+#obstacle {
+    width: 84px;
+    height: 68px;
+    position: relative;
+    top: 94px;
+    left: 1316px;
+    background-image: url(images/rock.png);
+}
+
+.move { 
+    animation: block 1.35s infinite linear;
+}
+
+.grass-move { 
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
+    /*adjust s value for speed*/
+    animation: grassAnimation 10s linear infinite;
+}
+
+.scoreboard {
+    text-align: center;
+    margin: 20px;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.current {
+    margin-bottom: 10px;
+}
+
+
+@keyframes jump {
+    0% {
+        top: 160px;
+    }
+
+    50% {
+        top: 42px;
+    }
+
+    100% {
+        top: 160px;
+    }
+}
+
+
+@keyframes block {
+    0% {
+        left: 1316px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes hover {
+    0% {
+        top: 160px;
+    }
+
+    50% {
+        top: 155px;
+    }
+
+    100% {
+        top: 160px;
+    }
+}
+
+@keyframes grassAnimation {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px 0;
+    }
+  }
+
+
+ 
